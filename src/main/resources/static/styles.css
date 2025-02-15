@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: auto; /* Ensure the page is scrollable if content overflows */
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+    margin: 2rem auto; /* Add margin to ensure spacing */
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #fff;
+    padding: 0 1rem; /* Ensure the heading doesn't overflow */
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    font-weight: bold;
+    color: #fff;
+}
+
+textarea, select, button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+select {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+button {
+    background: #667eea;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #764ba2;
+    transform: translateY(-2px);
+}
+
+.response-container {
+    margin-top: 2rem;
+}
+
+.response-box {
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 1rem;
+    border-radius: 8px;
+    min-height: 100px;
+    margin-top: 1rem;
+    animation: slideUp 0.5s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem; /* Smaller font size for mobile */
+    }
+
+    textarea, select, button {
+        font-size: 0.9rem; /* Smaller font size for mobile */
+    }
+}

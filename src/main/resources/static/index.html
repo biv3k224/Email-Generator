@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Reply Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Email Reply Generator</h1>
+        </header>
+
+        <main>
+            <div class="form-container">
+                <label for="emailContent">Original Email Content:</label>
+                <textarea id="emailContent" placeholder="Paste your email content here..."></textarea>
+
+                <label for="tone">Select Tone:</label>
+                <select id="tone">
+                    <option value="professional">Professional</option>
+                    <option value="casual">Casual</option>
+                    <option value="friendly">Friendly</option>
+                </select>
+
+                <button id="generateBtn">Generate Reply</button>
+            </div>
+
+            <div class="response-container">
+                <h2>Generated Reply:</h2>
+                <div id="response" class="response-box"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
