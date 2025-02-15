@@ -1,8 +1,6 @@
 HELP.md
 
-# Ignore sensitive config files
-src/main/resources/application.properties
-
+src\main\resources\application.properties
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
