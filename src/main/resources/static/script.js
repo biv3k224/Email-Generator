@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        responseBox.textContent = 'Generating reply...';
+        responseBox.textContent = 'Generating reply..';
 
         try {
             const response = await fetch('https://email-generator-3hn7.onrender.com/api/email/generate', {
