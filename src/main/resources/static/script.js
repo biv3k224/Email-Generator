@@ -11,7 +11,7 @@ document.getElementById('generateBtn').addEventListener('click', async () => {
     responseBox.textContent = 'Generating reply...';
 
     try {
-        const response = await fetch('http://localhost:8080/api/email/generate', {
+        const response = await fetch('https://email-generator-3hn7.onrender.com', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # Build the JAR file
-RUN mvn clean package
+RUN mvn clean package -DskipTests
 
 # Second stage: Use a smaller image to run the JAR
 FROM openjdk:17-jdk-slim

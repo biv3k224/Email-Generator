@@ -125,3 +125,30 @@ button:hover {
         font-size: 0.9rem; /* Smaller font size for mobile */
     }
 }
+
+/* Social Icons Styling */
+.social-icons {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.icon-link {
+    color: #0077b5; /* LinkedIn blue */
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.icon-link:hover {
+    color: #333; /* Darker color on hover */
+}
+
+.icon-link .fa-github {
+    color: #333; /* GitHub black */
+}
+
+.icon-link .fa-github:hover {
+    color: #0077b5; /* LinkedIn blue on hover */
+}
